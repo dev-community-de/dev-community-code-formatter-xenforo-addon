@@ -1,0 +1,38 @@
+{
+    "option.devcommunitydeCodeFormatterApiBaseUrl.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "a5f82b92fd94524f764607aff4b07158"
+    },
+    "option.devcommunitydeCodeFormatterApiKey.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "d876ff8da67c3731ae25d8335a4168b4"
+    },
+    "option_explain.devcommunitydeCodeFormatterApiBaseUrl.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_explain.devcommunitydeCodeFormatterApiKey.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "d41d8cd98f00b204e9800998ecf8427e"
+    },
+    "option_group.devcommunitydeCodeFormatter.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "c987051abc600ddf5773767321821985"
+    },
+    "option_group_description.devcommunitydeCodeFormatter.txt": {
+        "global_cache": false,
+        "version_id": 10010,
+        "version_string": "0.1.0 Alpha",
+        "hash": "1e2971bfaca990d3531454000e3c38f0"
+    }
+}

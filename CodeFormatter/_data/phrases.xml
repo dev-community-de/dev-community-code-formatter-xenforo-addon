@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<phrases>
+  <phrase title="option.devcommunitydeCodeFormatterApiBaseUrl" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[API Base URL]]></phrase>
+  <phrase title="option.devcommunitydeCodeFormatterApiKey" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[API Key]]></phrase>
+  <phrase title="option_explain.devcommunitydeCodeFormatterApiBaseUrl" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="option_explain.devcommunitydeCodeFormatterApiKey" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[]]></phrase>
+  <phrase title="option_group.devcommunitydeCodeFormatter" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[Code Formatter options]]></phrase>
+  <phrase title="option_group_description.devcommunitydeCodeFormatter" version_id="10010" version_string="0.1.0 Alpha"><![CDATA[Options of the code formatter add-on from dev-community.de.]]></phrase>
+</phrases>

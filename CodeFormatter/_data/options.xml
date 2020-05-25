@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+  <option option_id="devcommunitydeCodeFormatterApiBaseUrl" edit_format="textbox" data_type="string">
+    <default_value>https://dev-community-code-formatter.colognifornia.com</default_value>
+    <relation group_id="devcommunitydeCodeFormatter" display_order="1"/>
+  </option>
+  <option option_id="devcommunitydeCodeFormatterApiKey" edit_format="textbox" data_type="string">
+    <default_value></default_value>
+    <relation group_id="devcommunitydeCodeFormatter" display_order="2"/>
+  </option>
+</options>

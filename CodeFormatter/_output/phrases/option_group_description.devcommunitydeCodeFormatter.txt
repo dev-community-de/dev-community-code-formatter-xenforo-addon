@@ -1,0 +1,1 @@
+Options of the code formatter add-on from dev-community.de.
