@@ -2,16 +2,22 @@
     "legacy_addon_id": "",
     "title": "dev-community.de - Code Formatter",
     "description": "A XenForo add-on to format code in forum posts.",
-    "version_id": 10010,
-    "version_string": "0.1.0 Alpha",
+    "version_id": 1000070,
+    "version_string": "1.0.0",
     "dev": "dev-community.de",
     "dev_url": "https://github.com/dev-community-de",
     "faq_url": "",
     "support_url": "",
     "extra_urls": [],
     "require": {
-        "XF": [2000010, "XenForo 2.0.0+"],
-        "php": ["7.2.0", "PHP 7.2.0+"]
+        "XF": [
+            2000010,
+            "XenForo 2.0.0+"
+        ],
+        "php": [
+            "7.2.0",
+            "PHP 7.2.0+"
+        ]
     },
     "icon": "fa-code"
 }

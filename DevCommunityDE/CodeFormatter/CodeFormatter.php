@@ -69,7 +69,7 @@ class CodeFormatter
      */
     protected function postContainsCodeBlock()
     {
-        return strpos($this->preparer->getPost()->message, '[CODE') !== false;
+        return stripos($this->preparer->getPost()->message, '[CODE') !== false;
     }
 
     /**
