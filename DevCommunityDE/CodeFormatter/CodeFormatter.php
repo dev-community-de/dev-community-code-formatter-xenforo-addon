@@ -2,7 +2,7 @@
 
 namespace DevCommunityDE\CodeFormatter;
 
-use DevCommunityDE\CodeFormatter\XF\Service\Post\Preparer;
+use DevCommunityDE\CodeFormatter\Preparer\PreparerInterface;
 use \GuzzleHttp\Client as Guzzle;
 
 /**
@@ -14,7 +14,7 @@ class CodeFormatter
 {
 
     /**
-     * @var Preparer
+     * @var PreparerInterface
      */
     protected $preparer;
 
@@ -36,7 +36,7 @@ class CodeFormatter
     /**
      * @param Preparer $preparer
      */
-    public function __construct(Preparer $preparer)
+    public function __construct(PreparerInterface $preparer)
     {
         $this->preparer = $preparer;
         $this->guzzle = new Guzzle;
@@ -50,37 +50,37 @@ class CodeFormatter
      */
     public function run()
     {
-        if (!$this->postContainsCodeBlock()) {
+        if (!$this->contentContainsCodeBlock()) {
             return;
         }
 
-        $post = $this->getPostWithFormattedCode();
+        $content = $this->getEntityContentWithFormattedCode();
 
-        if (!$post) {
+        if (!$content) {
             return;
         }
 
-        $this->setPost($post);
-        $this->savePost();
+        $this->setEntityContent($content);
+        $this->saveEntity();
     }
 
     /**
      * @return bool
      */
-    protected function postContainsCodeBlock()
+    protected function contentContainsCodeBlock()
     {
-        return stripos($this->preparer->getPost()->message, '[CODE') !== false;
+        return stripos($this->preparer->getContent(), '[CODE') !== false;
     }
 
     /**
      * @return string|null
      */
-    protected function getPostWithFormattedCode() : ?string
+    protected function getEntityContentWithFormattedCode() : ?string
     {
         $res = $this->guzzle->post(
             $this->populateApiUrlWithApiKey($this->api_base_url, $this->api_key),
             [
-                'body' => $this->preparer->getPost()->message,
+                'body' => $this->preparer->getContent(),
             ]
         );
 
@@ -102,19 +102,19 @@ class CodeFormatter
     }
 
     /**
-     * @param string $post
+     * @param string $content
      */
-    protected function setPost(string $post)
+    protected function setEntityContent(string $content)
     {
-        $this->preparer->setMessage($post);
+        $this->preparer->setContent($content);
     }
 
     /**
      *
      */
-    protected function savePost()
+    protected function saveEntity()
     {
-        $this->preparer->getPost()->save();
+        $this->preparer->getEntity()->save();
     }
 
 }

@@ -1,27 +1,27 @@
 <?php
 
-namespace DevCommunityDE\CodeFormatter\XF\Service\Post;
+namespace DevCommunityDE\CodeFormatter\XFRM\Service\ResourceUpdate;
 
 use DevCommunityDE\CodeFormatter\Preparer\PreparerInterface;
 use DevCommunityDE\CodeFormatter\Traits\FormatsCode;
-use XF\Entity\Post;
-use XF\Service\Post\Preparer as BasePreparer;
+use XFRM\Entity\ResourceUpdate;
+use XFRM\Service\ResourceUpdate\Preparer as BasePreparer;
 
 /**
  * Class Preparer
  *
- * @package DevCommunityDE\CodeFormatter\XF\Service\Post
+ * @package DevCommunityDE\CodeFormatter\XFRM\Service\ResourceUpdate
  */
 class Preparer extends BasePreparer implements PreparerInterface
 {
     use FormatsCode;
 
     /**
-     * @return Post
+     * @return ResourceUpdate
      */
-    public function getEntity() : Post
+    public function getEntity() : ResourceUpdate
     {
-        return $this->getPost();
+        return $this->getUpdate();
     }
 
     /**
